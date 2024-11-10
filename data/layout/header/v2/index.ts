@@ -3,9 +3,9 @@ import { menuItemsProps } from '../menu';
 
 export const headerData: HeaderProps = {
   contactInfo: {
-    phone: '+92 (325) 615-7500',
+    phone: '+92-341-4264969',
     mail: 'contact@encodix.org',
-    address: '6391 Elgin St. Celina, 10299',
+    address: '...',
   },
   ctaBtn: {
     href: '/contact',
