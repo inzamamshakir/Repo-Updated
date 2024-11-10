@@ -117,7 +117,7 @@ export function Header() {
                     aria-label="header actions"
                     className="flex items-center gap-30px"
                   >
-                    <li>
+                    {/* <li>
                       <button
                         aria-label="Search toggle handler"
                         className={actionIconClasses}
@@ -127,12 +127,12 @@ export function Header() {
                       >
                         <FaMagnifyingGlass />
                       </button>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <span className={actionIconClasses}>
                         <FaCartShopping />
                       </span>
-                    </li>
+                    </li> */}
                     <li>
                       <OffCanvas />
                     </li>

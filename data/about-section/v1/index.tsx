@@ -59,21 +59,21 @@ export const aboutSectionData: AboutSectionProps = {
     },
   },
   sectionHeading: {
-    subtitle: 'About us',
-    title: 'Empowering Your Digital Tomorrow',
+    subtitle: '',
+    title: 'Redefining Boundaries with Smart Solutions.',
     description:
-      'It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typesetting industry loren ipsum',
+      'Encodix delivers innovative web and blockchain solutions to help businesses thrive in the digital age. Our expertise spans from website development to end-to-end blockchain implementation, enabling secure, efficient, and future-ready technology.',
   },
   keyPoints: [
     {
       icon: <Icon1 />,
-      title: 'Cloud Migrate Pro',
+      title: 'Tailored Solutions',
     },
     {
       icon: <Icon2 />,
-      title: 'AI Forge Labs',
+      title: 'Robust Security',
     },
   ],
   description:
-    'It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout.',
+    "Encodix is a dynamic software development company dedicated to advancing businesses through specialized web and blockchain technology solutions. Our team combines technical expertise with a forward-thinking approach to create tailored solutions that drive growth and enhance digital experiences. From website development to comprehensive blockchain projects, we are committed to delivering secure, scalable, and innovative solutions that meet our clients' unique needs and help them succeed in an ever-evolving digital landscape.",
 };

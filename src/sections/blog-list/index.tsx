@@ -42,12 +42,12 @@ const blogs: BlogProps[] = [
     slug: '/blog/single',
     image: {
       src: '/assets/images/blog/blog-lg-2.png',
-      alt: 'Empowering Businesses with Tech Synergy',
+      alt: 'Redefining Boundaries with Smart Solutions.',
     },
     authorName: 'admin',
     category: 'Category',
     commentCount: '05',
-    title: 'Empowering Businesses with Tech Synergy',
+    title: 'Redefining Boundaries with Smart Solutions.',
     description:
       'Aliquam eros justo, posuere loborti viverra lao ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis non, viverra laoreet augue mattis start fermentum ullamcor viverra laoreet By Admin . Creativity . 28th February 2022 . Leave a comment viverra laoreet augue mattis start fermentum ',
   },

@@ -10,11 +10,7 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
     href: '/about',
   },
   {
-    label: 'Portfolio',
-    href: '/portfolio',
-  },
-  {
-    title: 'Service',
+    title: 'Services',
     subMenuItems: [
       {
         label: 'Service List',
@@ -27,10 +23,18 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
     ],
   },
   {
-    title: 'Project',
+    label: 'Portfolio',
+    href: '/portfolio',
+  },
+  {
+    label: 'Testimonials',
+    href: '/testimonial',
+  },
+  {
+    title: 'Products',
     subMenuItems: [
       {
-        label: 'Project List',
+        label: 'Product List',
         href: '/project',
       },
       {
@@ -53,12 +57,8 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
     ],
   },
   {
-    title: 'Pages',
+    title: 'More',
     subMenuItems: [
-      {
-        label: 'Testimonial',
-        href: '/testimonial',
-      },
       {
         label: 'Team',
         href: '/team',
@@ -68,7 +68,7 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
         href: '/pricing',
       },
       {
-        label: 'FAQ',
+        label: 'FAQs',
         href: '/faq',
       },
     ],
