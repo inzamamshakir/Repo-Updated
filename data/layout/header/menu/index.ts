@@ -2,21 +2,16 @@ import { HeaderProps } from '@/src/layout/header/desktop/v1';
 
 export const menuItemsProps: HeaderProps['menuItems'] = [
   {
-    title: 'Home',
-    subMenuItems: [
-      {
-        label: 'Home One',
-        href: '/',
-      },
-      {
-        label: 'Home Two',
-        href: '/home-2',
-      },
-    ],
+    label: 'Home',
+    href: '/',
   },
   {
     label: 'About',
     href: '/about',
+  },
+  {
+    label: 'Portfolio',
+    href: '/portfolio',
   },
   {
     title: 'Service',

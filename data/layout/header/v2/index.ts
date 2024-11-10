@@ -5,7 +5,7 @@ export const headerData: HeaderProps = {
   contactInfo: {
     phone: '+92-341-4264969',
     mail: 'contact@encodix.org',
-    address: '...',
+    address: 'Office # 7, Mazzanine Floor, Mediacom, Faisalabad',
   },
   ctaBtn: {
     href: '/contact',
