@@ -77,7 +77,7 @@ export function Header() {
                     <span className={addressIconParentClasses}>
                       <FaPhone />
                     </span>
-                    <a href={`tel:${contactInfo.phone.split(' ').join('')}`}>
+                    <a href={`https://wa.me/447933021313`}>
                       {contactInfo.phone}
                     </a>
                   </li>

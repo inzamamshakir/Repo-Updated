@@ -11,6 +11,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaWhatsapp,
 } from 'react-icons/fa6';
 import { FaEnvelope, FaPhone } from 'react-icons/fa6';
 import { FaMapMarkerAlt } from 'react-icons/fa';
@@ -55,18 +56,18 @@ const offCanvasProps: IOffCanvas = {
   description:
     'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.',
   contactInfo: {
-    location: ' 88 broklyn street, New York',
-    phoneNumber: '+1 555-9990-153',
-    mail: 'info@example.com',
+    location: ' Shieldmuir St, Wishaw ML2 7TH, UK',
+    phoneNumber: '+44 7933-021313',
+    mail: 'contact@encodix.org',
   },
   socialLinks: [
     {
       icon: <FaFacebookF />,
-      href: 'https://www.facebook.com/',
+      href: 'https://www.facebook.com/encodixOfficial',
     },
     {
       icon: <FaLinkedinIn />,
-      href: 'https://www.linkedin.com/',
+      href: 'https://www.linkedin.com/company/encodix',
     },
     {
       icon: <FaTwitter />,
@@ -74,7 +75,11 @@ const offCanvasProps: IOffCanvas = {
     },
     {
       icon: <FaInstagram />,
-      href: 'https://www.instagram.com/',
+      href: 'https://www.instagram.com/encodixOfficial',
+    },
+    {
+      icon: <FaWhatsapp />,
+      href: 'https://wa.me/447933021313',
     },
   ],
 };
@@ -144,10 +149,7 @@ export function OffCanvas() {
                   <span className={addressIconParentClasses}>
                     <FaPhone />
                   </span>
-                  <a
-                    href={`tel:${contactInfo.phoneNumber.split(' ').join('')}`}
-                    className={textColor}
-                  >
+                  <a href={`https://wa.me/447933021313`} className={textColor}>
                     {contactInfo.phoneNumber}
                   </a>
                 </li>

@@ -214,7 +214,8 @@ export function Footer({ className, footerTopClassName }: Props) {
                     <FaPhone />
                   </span>
                   <a
-                    href={`tel:${columnFour.phoneNumber.split(' ').join('')}`}
+                    // href={`tel:${columnFour.phoneNumber.split(' ').join('')}`}
+                    href={`https://wa.me/447933021313`}
                     className={textColor}
                   >
                     {columnFour.phoneNumber}

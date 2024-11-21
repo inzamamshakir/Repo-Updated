@@ -106,9 +106,9 @@ export function ServiceDetailsSection() {
                 <p className="mb-1 mt-6">Need help? contact our experts</p>
                 <a
                   className="font-secondary text-md font-bold  transition-colors duration-300"
-                  href="tel:+0032-1255-69874"
+                  href="https://wa.me/447933021313"
                 >
-                  +0032-1255-69874
+                  +44-7933-021313
                 </a>
               </div>
             </div>

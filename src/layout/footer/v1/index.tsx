@@ -167,7 +167,8 @@ export function Footer({ className }: SectionProps) {
                         {columnTwo.phoneNumbers.map((phoneNumber, index) => (
                           <a
                             key={index}
-                            href={`tel:${phoneNumber.split(' ').join('')}`}
+                            // href={`tel:${phoneNumber.split(' ').join('')}`}
+                            href={`https://wa.me/447933021313`}
                             className={textColor}
                           >
                             {phoneNumber}

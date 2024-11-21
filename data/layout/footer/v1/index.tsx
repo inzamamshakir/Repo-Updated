@@ -57,9 +57,9 @@ export const footerSectionData: FooterSectionProps = {
   },
   columnTwo: {
     title: 'Address',
-    location: '2972 Westheimer Rd. Santa Ana, Illinois 85486 ',
-    mails: ['debbie.baker@example.com', 'nevaeh.simm@example.com'],
-    phoneNumbers: ['(405) 555-0128', '(629) 555-0129'],
+    location: 'Shieldmuir St, Wishaw ML2 7TH, UK',
+    mails: ['contact@encodix.org', 'ceo@encodix.org'],
+    phoneNumbers: ['+44-7933-021313', '+92-341-4264969'],
   },
   columnThree: {
     title: 'Recent Blog',

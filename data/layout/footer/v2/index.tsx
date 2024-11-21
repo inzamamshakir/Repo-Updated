@@ -4,17 +4,18 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaWhatsapp,
 } from 'react-icons/fa6';
 
 export const footerSectionData: FooterSectionProps = {
   socialLinks: [
     {
       icon: <FaFacebookF />,
-      href: 'https://www.facebook.com/',
+      href: 'https://www.facebook.com/encodixOfficial',
     },
     {
       icon: <FaLinkedinIn />,
-      href: 'https://www.linkedin.com/',
+      href: 'https://www.linkedin.com/company/encodix',
     },
     {
       icon: <FaTwitter />,
@@ -22,7 +23,11 @@ export const footerSectionData: FooterSectionProps = {
     },
     {
       icon: <FaInstagram />,
-      href: 'https://www.instagram.com/',
+      href: 'https://www.instagram.com/encodixOfficial',
+    },
+    {
+      icon: <FaWhatsapp />,
+      href: 'https://wa.me/447933021313',
     },
   ],
   columnOne: {
@@ -111,9 +116,9 @@ export const footerSectionData: FooterSectionProps = {
   },
   columnFour: {
     title: 'Contact Us',
-    phoneNumber: '+880 123 45 67 89',
-    mail: 'yourmail@gmail.com',
-    location: '1212, Lav Vegas, The Veg Street, USA',
+    phoneNumber: '+44 7933-021313',
+    mail: 'contact@encodix.org',
+    location: 'Shieldmuir St, Wishaw ML2 7TH, UK',
   },
   footerBottom: {
     copyrightText: '© Yoursitename  2024 | All Rights Reserved',

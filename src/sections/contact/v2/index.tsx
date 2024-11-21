@@ -84,9 +84,7 @@ export function ContactSection() {
                 </span>
                 <div>
                   <h3 className={addressTitleClasses}>Phone number</h3>
-                  <a href={`tel:${contactInfo.phone.split(' ').join('')}`}>
-                    {contactInfo.phone}
-                  </a>
+                  <a href={`https://wa.me/447933021313`}>{contactInfo.phone}</a>
                 </div>
               </li>
             </ul>
