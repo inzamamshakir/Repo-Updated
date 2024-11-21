@@ -110,8 +110,9 @@ export function ContactBox({ title, phone }: ContactBoxProps) {
       <div>
         <p>{title}</p>
         <a
-          href={`tel:${phone.split(' ').join('')}`}
+          href={`https://wa.me/447933021313`}
           className="block font-secondary text-lg font-bold leading-[1.3]"
+          target="_blank"
         >
           {phone}
         </a>
