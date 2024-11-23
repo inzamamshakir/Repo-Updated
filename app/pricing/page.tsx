@@ -4,6 +4,7 @@ import { CtaSection } from '@/src/sections/cta/v1';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { PricingSection } from '@/src/sections/pricing/version-2';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Pricing',
@@ -15,16 +16,17 @@ export default function Page() {
     <>
       <MainHeader version="2" />
       <HeroSection
-        title="Team"
+        title="Pricing"
         breadcrumbItems={[
           {
             label: 'Home',
             href: '/',
           },
           {
-            label: 'Team',
+            label: 'Pricing',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <PricingSection />
       <CtaSection className="section-padding-primary" />

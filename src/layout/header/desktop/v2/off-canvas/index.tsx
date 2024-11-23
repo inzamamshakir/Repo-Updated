@@ -56,7 +56,7 @@ const offCanvasProps: IOffCanvas = {
   description:
     'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.',
   contactInfo: {
-    location: ' Shieldmuir St, Wishaw ML2 7TH, UK',
+    location: ' 26 Stevenston St, Holytown, Motherwell ML1 4RG, UK',
     phoneNumber: '+44 7933-021313',
     mail: 'contact@encodix.org',
   },

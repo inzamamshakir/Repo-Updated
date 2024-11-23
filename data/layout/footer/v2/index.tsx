@@ -118,10 +118,10 @@ export const footerSectionData: FooterSectionProps = {
     title: 'Contact Us',
     phoneNumber: '+44 7933-021313',
     mail: 'contact@encodix.org',
-    location: 'Shieldmuir St, Wishaw ML2 7TH, UK',
+    location: '26 Stevenston St, Holytown, Motherwell ML1 4RG, UK',
   },
   footerBottom: {
-    copyrightText: '© Yoursitename  2024 | All Rights Reserved',
+    copyrightText: '© Encodix  2024 | All Rights Reserved',
     links: [
       {
         label: 'Trams & Condition',

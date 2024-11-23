@@ -3,6 +3,7 @@ import { MainHeader } from '@/src/layout/header';
 import { BlogDetilsSection } from '@/src/sections/blog-details/v1';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Blog details',
@@ -24,6 +25,7 @@ export default function Page() {
             label: 'Blog Details',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <BlogDetilsSection />
       <Footer />

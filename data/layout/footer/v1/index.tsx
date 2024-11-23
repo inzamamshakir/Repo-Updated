@@ -1,5 +1,5 @@
 import { FooterSectionProps } from '@/src/layout/footer/v1';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa6';
+import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa6';
 
 export const footerSectionData: FooterSectionProps = {
   about: {
@@ -8,7 +8,7 @@ export const footerSectionData: FooterSectionProps = {
     socialLinks: [
       {
         icon: <FaFacebookF />,
-        href: 'https://www.facebook.com/',
+        href: 'https://www.facebook.com/encodixOfficial',
       },
       {
         icon: <FaTwitter />,
@@ -16,7 +16,11 @@ export const footerSectionData: FooterSectionProps = {
       },
       {
         icon: <FaInstagram />,
-        href: 'https://www.instagram.com/',
+        href: 'https://www.instagram.com/encodixOfficial',
+      },
+      {
+        icon: <FaWhatsapp />,
+        href: 'https://wa.me/447933021313',
       },
     ],
   },
@@ -57,7 +61,7 @@ export const footerSectionData: FooterSectionProps = {
   },
   columnTwo: {
     title: 'Address',
-    location: 'Shieldmuir St, Wishaw ML2 7TH, UK',
+    location: '26 Stevenston St, Holytown, Motherwell ML1 4RG, UK',
     mails: ['contact@encodix.org', 'ceo@encodix.org'],
     phoneNumbers: ['+44-7933-021313', '+92-341-4264969'],
   },
@@ -85,7 +89,7 @@ export const footerSectionData: FooterSectionProps = {
     ],
   },
   footerBottom: {
-    copyrightText: '© Yoursitename  2024 | All Rights Reserved',
+    copyrightText: '© Encodix 2024 | All Rights Reserved',
     links: [
       {
         label: 'Trams & Condition',

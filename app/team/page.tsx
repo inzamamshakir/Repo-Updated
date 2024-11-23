@@ -3,6 +3,7 @@ import { MainHeader } from '@/src/layout/header';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { TeamSection } from '@/src/sections/team/grid';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Team',
@@ -24,6 +25,7 @@ export default function Page() {
             label: 'Team',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <TeamSection />
       <Footer />

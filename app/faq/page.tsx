@@ -3,6 +3,7 @@ import { MainHeader } from '@/src/layout/header';
 import FAQSection from '@/src/sections/faq';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Faq',
@@ -24,6 +25,7 @@ export default function Page() {
             label: 'Faq',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <FAQSection />
       <Footer />

@@ -8,6 +8,7 @@ import { StatisticsSection } from '@/src/sections/statistics/v1';
 import { TestimonialSection } from '@/src/sections/testimonial/v1';
 import { WorkprocessSection } from '@/src/sections/work-process/v1';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | About',
@@ -29,6 +30,7 @@ export default function Page() {
             label: 'About',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <AboutSection />
       <CtaSection />

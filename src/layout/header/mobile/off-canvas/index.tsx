@@ -55,7 +55,7 @@ interface IOffCanvas {
 
 const offCanvasProps: IOffCanvas = {
   contactInfo: {
-    location: ' Shieldmuir St, Wishaw ML2 7TH, UK',
+    location: ' 26 Stevenston St, Holytown, Motherwell ML1 4RG, UK',
     phoneNumber: '+44 7933-021313',
     mail: 'contact@encodix.org',
   },

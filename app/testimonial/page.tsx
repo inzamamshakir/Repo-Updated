@@ -4,6 +4,7 @@ import { CtaSection } from '@/src/sections/cta/v1';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { TestimonialSection } from '@/src/sections/testimonial/grid';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Testimonial',
@@ -25,6 +26,7 @@ export default function Page() {
             label: 'Testimonial',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <TestimonialSection />
       <CtaSection className="section-padding-primary !pt-0" />

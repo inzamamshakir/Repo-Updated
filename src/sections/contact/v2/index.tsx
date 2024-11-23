@@ -24,12 +24,11 @@ export const contactSectionData: ContactSectionProps = {
     sectionHeading: {
       title: 'Get in touch ',
       description:
-        'It is a long established fact that a reader will be distrol acted bioiiy desig the rea dablea contentIt is a long established fact that a reader will be ',
+        "Have a project in mind or a question about our services? We're here to help! Whether it’s web development, blockchain solutions, or custom software needs, the Encodix team is ready to collaborate and bring your ideas to life. Let’s create something amazing together—reach out today!",
     },
-    location: `Dhaka 102, utl 1216, road 45 house
-shantighar rahuta, 1213`,
-    mail: 'ijmnhhasan000@yourmail.com',
-    phone: '0000-0000-00-000',
+    location: `26 Stevenston St, Holytown, Motherwell ML1 4RG, UK`,
+    mail: 'contact@encodix.org',
+    phone: '0044-7933-02-1313',
   },
 };
 

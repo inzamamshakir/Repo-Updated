@@ -5,7 +5,7 @@ export const headerData: HeaderProps = {
   contactInfo: {
     phone: '+44-793-3021313',
     mail: 'contact@encodix.org',
-    address: 'Shieldmuir St, Wishaw ML2 7TH, United Kingdom',
+    address: '26 Stevenston St, Holytown, Motherwell ML1 4RG, UK',
   },
   ctaBtn: {
     href: '/contact',

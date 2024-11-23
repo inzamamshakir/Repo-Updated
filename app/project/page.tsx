@@ -4,6 +4,7 @@ import { MainHeader } from '@/src/layout/header';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { ProjectSection } from '@/src/sections/project/v1';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Project',
@@ -25,6 +26,7 @@ export default function Page() {
             label: 'Project',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <ProjectSection {...projectSectionData} />
       <Footer />

@@ -3,7 +3,7 @@ import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import React from 'react';
-import bannerImage from 'public/assets/images/hero/hero-3.jpg';
+// import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 interface BreadcrumbItem {
   href?: string;
@@ -13,15 +13,23 @@ interface BreadcrumbItem {
 export interface HeroSectionProps {
   title: string;
   breadcrumbItems: BreadcrumbItem[];
+  heroImageUrl: string;
 }
 
-export function HeroSection({ title, breadcrumbItems }: HeroSectionProps) {
+export function HeroSection({
+  title,
+  breadcrumbItems,
+  heroImageUrl,
+}: HeroSectionProps) {
+  console.log(heroImageUrl, 'heroImageUrl');
+  console.log(heroImageUrl, 'heroImageUrl');
+
   return (
     <section className="section-padding-primary relative flex min-h-[450px] items-center">
       {/* Background image  */}
       <Image
         priority
-        src={bannerImage.src}
+        src={heroImageUrl}
         alt={`${process.env.NEXT_PUBLIC_SITE_NAME} banner 3`}
         fill
         sizes="100vw"

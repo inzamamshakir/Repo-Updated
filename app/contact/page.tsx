@@ -4,6 +4,7 @@ import { ContactSection } from '@/src/sections/contact/v2';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { MapSection } from '@/src/sections/map-section';
 import { Metadata } from 'next';
+import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
   title: 'Encodix | Contact',
@@ -25,6 +26,7 @@ export default function Page() {
             label: 'Contact Us',
           },
         ]}
+        heroImageUrl={bannerImage.src}
       />
       <ContactSection />
       <MapSection />
