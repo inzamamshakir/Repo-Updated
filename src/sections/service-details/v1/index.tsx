@@ -1,10 +1,10 @@
 'use client';
-import { LinkProps, blurDataUrl } from '@/src/common-types';
+import { blurDataUrl } from '@/src/common-types';
 import { useParams, useRouter } from 'next/navigation';
-import { Button } from '@/src/components/button';
+// import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
-import { TextInput } from '@/src/components/inputs/text-input';
+// import { TextInput } from '@/src/components/inputs/text-input';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import { FaCircleCheck, FaPhone } from 'react-icons/fa6';
