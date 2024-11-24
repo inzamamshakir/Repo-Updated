@@ -9,7 +9,7 @@ import {
   FaRegComments,
   FaRegFolderOpen,
   FaRegUser,
-  FaReply,
+  // FaReply,
   FaTags,
   FaFacebookF,
   FaTwitter,

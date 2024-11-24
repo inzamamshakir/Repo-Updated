@@ -1,6 +1,6 @@
 'use client';
 import { blurDataUrl } from '@/src/common-types';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 // import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
@@ -39,7 +39,7 @@ import servicesData from '@/data/service-section/services-details.json';
 
 export function ServiceDetailsSection() {
   const params = useParams();
-  const router = useRouter();
+  // const router = useRouter();
   const id = params?.id;
 
   // Find the relevant service based on the `id` from the URL
