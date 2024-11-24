@@ -1,5 +1,10 @@
 import { FooterSectionProps } from '@/src/layout/footer/v1';
-import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa6';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaWhatsapp,
+} from 'react-icons/fa6';
 
 export const footerSectionData: FooterSectionProps = {
   about: {
@@ -25,36 +30,41 @@ export const footerSectionData: FooterSectionProps = {
     ],
   },
   columnOne: {
-    title: 'Get Free Link',
+    title: 'Encodix Solutions',
     links: [
       {
-        label: 'Software Development',
-        href: '/',
+        label: 'Blockchain Consulting',
+        href: '/services/blockchain-consulting',
         openNewTab: false,
       },
       {
-        label: 'Data Analytics',
-        href: '/',
+        label: 'Blockchain Development',
+        href: '/services/blockchain-development',
         openNewTab: false,
       },
       {
-        label: 'IT Consulting',
-        href: '/',
+        label: 'Smart Contract Development',
+        href: '/services/smart-contract-development',
         openNewTab: false,
       },
       {
-        label: 'UI/UX Design',
-        href: '/',
+        label: 'Web App Development',
+        href: '/services/web-app-development',
         openNewTab: false,
       },
       {
-        label: 'Network Solutions',
-        href: '/',
+        label: 'Mobile App Development',
+        href: '/services/mobile-app-development',
         openNewTab: false,
       },
       {
-        label: 'Others',
-        href: '/',
+        label: 'E-Commerce Development',
+        href: '/services/ecom-development',
+        openNewTab: false,
+      },
+      {
+        label: 'Server Deployment',
+        href: '/services/server-deployment',
         openNewTab: false,
       },
     ],
@@ -93,7 +103,7 @@ export const footerSectionData: FooterSectionProps = {
     links: [
       {
         label: 'Trams & Condition',
-        href: '/',
+        href: '/terms-conditions',
         openNewTab: false,
       },
       {

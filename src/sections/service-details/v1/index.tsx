@@ -1,4 +1,6 @@
+'use client';
 import { LinkProps, blurDataUrl } from '@/src/common-types';
+import { useParams, useRouter } from 'next/navigation';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
@@ -6,35 +8,47 @@ import { TextInput } from '@/src/components/inputs/text-input';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import { FaCircleCheck, FaPhone } from 'react-icons/fa6';
+import servicesData from '@/data/service-section/services-details.json';
 
-const services: LinkProps[] = [
-  {
-    label: 'AI Insights Pro',
-    href: '/',
-  },
-  {
-    label: 'Tech Armor Security',
-    href: '/',
-  },
-  {
-    label: 'Blockchain Forge',
-    href: '/',
-  },
-  {
-    label: 'DigitalIQ Consulting',
-    href: '/',
-  },
-  {
-    label: 'RapidApp Innovate',
-    href: '/',
-  },
-  {
-    label: 'RoboLogic Labs',
-    href: '/',
-  },
-];
+// const services: LinkProps[] = [
+//   {
+//     label: 'AI Insights Pro',
+//     href: '/',
+//   },
+//   {
+//     label: 'Tech Armor Security',
+//     href: '/',
+//   },
+//   {
+//     label: 'Blockchain Forge',
+//     href: '/',
+//   },
+//   {
+//     label: 'DigitalIQ Consulting',
+//     href: '/',
+//   },
+//   {
+//     label: 'RapidApp Innovate',
+//     href: '/',
+//   },
+//   {
+//     label: 'RoboLogic Labs',
+//     href: '/',
+//   },
+// ];
 
 export function ServiceDetailsSection() {
+  const params = useParams();
+  const router = useRouter();
+  const id = params?.id;
+
+  // Find the relevant service based on the `id` from the URL
+  const service = servicesData.find((service) => service.id === id);
+
+  if (!service) {
+    return <p>Service not found.</p>;
+  }
+
   return (
     <section className="section-padding-primary">
       <Container>
@@ -44,17 +58,17 @@ export function ServiceDetailsSection() {
             {/* Service list  */}
             <div className="grid gap-6 rounded-5 bg-accent-100 px-10 py-30px dark:bg-accent-700">
               <h3 className="h3 text-accent-700 dark:text-white">
-                Our Service
+                Other Services
               </h3>
-              {services && services.length > 0 && (
+              {service && (
                 <ul className="grid gap-3" aria-label="service list">
-                  {services.map((service, index) => (
+                  {service.otherServices?.map((otherService, index) => (
                     <li key={index}>
                       <CustomLink
-                        href={service.href}
+                        href={otherService.id}
                         className="flex items-center justify-between gap-4 transition-colors duration-300 hover:text-primary"
                       >
-                        <span className="flex-1">{service.label}</span>
+                        <span className="flex-1">{otherService.name}</span>
                         <svg
                           width={22}
                           height={7}
@@ -114,7 +128,7 @@ export function ServiceDetailsSection() {
             </div>
 
             {/* Search box  */}
-            <div className="bg-accent-100 p-10 dark:bg-accent-700">
+            {/* <div className="bg-accent-100 p-10 dark:bg-accent-700">
               <h3 className="h3 text-accent-700 dark:text-white">
                 Search Service
               </h3>
@@ -129,11 +143,14 @@ export function ServiceDetailsSection() {
                   <span className="relative z-1">SEARCH</span>
                 </Button>
               </div>
-            </div>
+            </div> */}
 
             {/* Testimonial    */}
             <div className="grid gap-30px">
               <div className="relative z-1 bg-accent-100 p-10 dark:bg-accent-700">
+                <h3 className="h3 text-accent-700 dark:text-white">
+                  Recent Feedback
+                </h3>
                 <p>
                   Aliquam eros justo, posuere loborti vive rra laoreet matti
                   ullamc per posu ere viverra .Aliquam os justo, posuere
@@ -177,7 +194,7 @@ export function ServiceDetailsSection() {
           <div className="grid gap-6">
             <div className="relative mb-5 overflow-hidden rounded-5">
               <Image
-                src={'/assets/images/service-details/main-image-1.png'}
+                src={`${service.heroImage}`}
                 alt="service image main"
                 width={850}
                 height={512}
@@ -200,24 +217,11 @@ export function ServiceDetailsSection() {
                 </svg>
               </span>
             </div>
-            <p>
-              Aliquam eros justo, posuere loborti viverra lao ullamcorper
-              posuere viverra .Aliquam eros justo, posuere lobortis non, viverra
-              laoreet augue mattis start fermentum ullamcor viverra laoreet By
-              Admin . Creativity . 28th February 2022 . Leave a comment viverra
-              laoreet augue mattis start fermentum start fermentum ullamcor
-              laoreet augue mattis start fermentum ullamcor viverra laoreet.
-            </p>
-            <p>
-              Aliquam eros justo, posuere loborti viverra lao ullamcorper
-              posuere viverra .Aliquam eros justo, posuere lobortis non, viverra
-              laoreet augue mattis start fermentum ullamcor viverra laoreet By
-              Admin . Creativity . 28th February 2022 . Leave a comment viverra
-              laoreet augue mattis start fermentum start fermentum
-            </p>
+            <p>{service.description}</p>
+            <p>{service.descriptionMore}</p>
             <div className="my-10 grid items-center gap-8 md:grid-cols-2">
               <Image
-                src="/assets/images/service-details/image-2.png"
+                src={`${service.serviceImageMiddle}`}
                 alt="service image 2"
                 width={640}
                 height={426}
@@ -230,12 +234,12 @@ export function ServiceDetailsSection() {
                       <FaCircleCheck />
                     </span>
                     <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
-                      Best Emplementation
+                      Security Assurance
                     </h3>
                   </div>
                   <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    ished fact that a reader will acted bioiiy desig.
+                    Robust development practices ensuring data and transactional
+                    security.
                   </p>
                 </div>
                 <div className="grid gap-3">
@@ -244,38 +248,55 @@ export function ServiceDetailsSection() {
                       <FaCircleCheck />
                     </span>
                     <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
-                      Best Emplementation
+                      Deep Expertise
                     </h3>
                   </div>
                   <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    ished fact that a reader will acted bioiiy desig.
+                    A team of blockchain professionals with hands-on experience.
                   </p>
+                </div>
+                <div className="grid gap-3">
+                  <div className="flex items-center gap-4">
+                    <span className="flex-none text-base/[1] text-primary">
+                      <FaCircleCheck />
+                    </span>
+                    <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                      End-to-End Support
+                    </h3>
+                  </div>
+                  <p>From strategy to deployment and beyond.</p>
                 </div>
               </div>
             </div>
-
-            <p>
+            <div>
+              <h2 className="text-xl font-bold text-accent-700 dark:text-white">
+                Key Offerings
+              </h2>
+            </div>
+            {/* <p>
               Aliquam eros justo, posuere loborti viverra lao ullamcorper
               posuere viverra .Aliquam eros justo, posuere lobortis non, viverra
               laoreet augue mattis start fermentum ullamcor viverra laoreet By
               Admin . Creativity . 28th February 2022 . Leave a comment viverra
               laoreet augue mattis start fermentum start fermentum
-            </p>
+            </p> */}
 
             <div className="mt-2.5 grid grid-cols-[1fr_260px] gap-6">
               <div className="grid items-baseline gap-6 lg:gap-9">
-                <div>
-                  <h3 className="text-md font-bold text-accent-700 dark:text-white">
-                    Best Emplementation
-                  </h3>
-                  <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    the.ished fact that a reader will be distrol acted bioiiy
-                    bioiiy desig the.ished fact that a reader.
-                  </p>
-                </div>
-                <div>
+                {service.keyOfferings?.map((offering, index) => (
+                  <div key={index}>
+                    <h3 className="text-md font-bold text-accent-700 dark:text-white">
+                      {offering.name}
+                    </h3>
+                    {/* <p>{offering.description}</p> */}
+                    {offering.points?.map((point, index) => (
+                      <ul key={index} className="list-disc pl-8">
+                        <li>{point}</li>
+                      </ul>
+                    ))}
+                  </div>
+                ))}
+                {/* <div>
                   <h3 className="text-md font-bold text-accent-700 dark:text-white">
                     Design make for you.
                   </h3>
@@ -284,8 +305,8 @@ export function ServiceDetailsSection() {
                     the.ished fact that a reader will be distrol acted bioiiy
                     bioiiy desig the.ished fact that a reader.
                   </p>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <h3 className="text-md font-bold text-accent-700 dark:text-white">
                     Finished the process
                   </h3>
@@ -294,10 +315,10 @@ export function ServiceDetailsSection() {
                     the.ished fact that a reader will be distrol acted bioiiy
                     bioiiy desig the.ished fact that a reader.
                   </p>
-                </div>
+                </div> */}
               </div>
               <Image
-                src="/assets/images/service-details/image-3.png"
+                src={`${service.serviceImageLast}`}
                 alt="service image 2"
                 width={640}
                 height={870}
