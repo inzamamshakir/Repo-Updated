@@ -51,21 +51,21 @@ export const serviceSectionData: ServiceSectionProps = {
       title: 'Blockchain Consulting',
       description:
         'Unlock the potential of blockchain technology with our consulting services. We guide you understand the opportunities to optimize your business operations.',
-      slug: '/services/single',
+      slug: '/services/blockchain-consulting',
     },
     {
       icon: <Icon2 />,
       title: 'Smart Contract Development',
       description:
         'Leverage the power of blockchain automation through secure, efficient, and self-executing smart contracts. We design and deploy customized smart contracts.',
-      slug: '/services/single',
+      slug: '/services/smart-contract-development',
     },
     {
       icon: <Icon3 />,
       title: 'Web App Development',
       description:
-        "At Encodix, we specialize in developing custom web applications that are tailored to meet your business needs.",
-      slug: '/services/single',
+        'At Encodix, we specialize in developing custom web applications that are tailored to meet your business needs.',
+      slug: '/services/web-app-development',
     },
   ],
 };

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "blockchain-consulting",
+    "name": "BlockChain Consulting",
+    "heroImage": "/assets/images/service-details/main-image-1.png",
+    "description": "At Encodix, we provide expert blockchain consulting services to help businesses unlock the potential of blockchain technology. Whether you're exploring blockchain for the first time or looking to refine your existing strategy, our team delivers tailored solutions to fit your needs.",
+    "descriptionMore": "Our expertise spans enterprise-level blockchain strategy, decentralized application (dApp) development, smart contract implementation, and end-to-end blockchain integration. We aim to help organizations drive efficiency, security, and transparency through cutting-edge blockchain solutions.",
+    "serviceImageMiddle": "/assets/images/service-details/image-2.png",
+    "serviceImageLast": "/assets/images/service-details/image-3.png",
+    "details": "",
+    "otherServices": [
+      {
+        "id": "blockchain-development",
+        "name": "BlockChain Development"
+      },
+      {
+        "id": "smart-contract-development",
+        "name": "Smart Contract Development"
+      },
+      {
+        "id": "web-app-development",
+        "name": "Website & Web Application Development"
+      },
+      {
+        "id": "mobile-app-development",
+        "name": "Mobile Apps Development"
+      },
+      {
+        "id": "ecom-development",
+        "name": "E-Commerce Development"
+      },
+      {
+        "id": "server-deployment",
+        "name": "Server Deployment"
+      }
+    ],
+    "keyOfferings": [
+      {
+        "name": "Strategic Blockchain Advisory",
+        "points": [
+          "Comprehensive assessment of business processes.",
+          "Identification of use cases where blockchain can add value.",
+          "Customized blockchain adoption roadmap."
+        ]
+      },
+      {
+        "name": "Smart Contract Development",
+        "points": [
+          "Design, development, and deployment of secure smart contracts.",
+          "Audit services to ensure reliability and compliance."
+        ]
+      },
+      {
+        "name": "Decentralized Application (dApp) Development",
+        "points": [
+          "End-to-end dApp creation tailored to business needs.",
+          "Expertise in Ethereum, Binance Smart Chain, Polkadot, and more."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "blockchain-development",
+    "name": "BlockChain Development",
+    "heroImage": "/assets/images/service-details/main-image-1.png",
+    "description": "At Encodix, we provide expert blockchain consulting services to help businesses unlock the potential of blockchain technology. Whether you're exploring blockchain for the first time or looking to refine your existing strategy, our team delivers tailored solutions to fit your needs.",
+    "descriptionMore": "Our expertise spans enterprise-level blockchain strategy, decentralized application (dApp) development, smart contract implementation, and end-to-end blockchain integration. We aim to help organizations drive efficiency, security, and transparency through cutting-edge blockchain solutions.",
+    "serviceImageMiddle": "/assets/images/service-details/image-2.png",
+    "serviceImageLast": "/assets/images/service-details/image-3.png",
+    "details": "",
+    "otherServices": [
+      {
+        "id": "blockchain-consulting",
+        "name": "BlockChain Consulting"
+      },
+      {
+        "id": "smart-contract-development",
+        "name": "Smart Contract Development"
+      },
+      {
+        "id": "web-app-development",
+        "name": "Website & Web Application Development"
+      },
+      {
+        "id": "mobile-app-development",
+        "name": "Mobile Apps Development"
+      },
+      {
+        "id": "ecom-development",
+        "name": "E-Commerce Development"
+      },
+      {
+        "id": "server-deployment",
+        "name": "Server Deployment"
+      }
+    ],
+    "keyOfferings": [
+      {
+        "name": "Strategic Blockchain Advisory",
+        "points": [
+          "Comprehensive assessment of business processes.",
+          "Identification of use cases where blockchain can add value.",
+          "Customized blockchain adoption roadmap."
+        ]
+      },
+      {
+        "name": "Smart Contract Development",
+        "points": [
+          "Design, development, and deployment of secure smart contracts.",
+          "Audit services to ensure reliability and compliance."
+        ]
+      },
+      {
+        "name": "Decentralized Application (dApp) Development",
+        "points": [
+          "End-to-end dApp creation tailored to business needs.",
+          "Expertise in Ethereum, Binance Smart Chain, Polkadot, and more."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "smart-contract-development",
+    "name": "Smart Contract Development",
+    "heroImage": "/assets/images/service-details/main-image-1.png",
+    "description": "At Encodix, we provide expert blockchain consulting services to help businesses unlock the potential of blockchain technology. Whether you're exploring blockchain for the first time or looking to refine your existing strategy, our team delivers tailored solutions to fit your needs.",
+    "descriptionMore": "Our expertise spans enterprise-level blockchain strategy, decentralized application (dApp) development, smart contract implementation, and end-to-end blockchain integration. We aim to help organizations drive efficiency, security, and transparency through cutting-edge blockchain solutions.",
+    "serviceImageMiddle": "/assets/images/service-details/image-2.png",
+    "serviceImageLast": "/assets/images/service-details/image-3.png",
+    "details": "",
+    "otherServices": [
+      {
+        "id": "blockchain-consulting",
+        "name": "BlockChain Consulting"
+      },
+      {
+        "id": "blockchain-development",
+        "name": "BlockChain Development"
+      },
+      {
+        "id": "web-app-development",
+        "name": "Website & Web Application Development"
+      },
+      {
+        "id": "mobile-app-development",
+        "name": "Mobile Apps Development"
+      },
+      {
+        "id": "ecom-development",
+        "name": "E-Commerce Development"
+      },
+      {
+        "id": "server-deployment",
+        "name": "Server Deployment"
+      }
+    ],
+    "keyOfferings": [
+      {
+        "name": "Strategic Blockchain Advisory",
+        "points": [
+          "Comprehensive assessment of business processes.",
+          "Identification of use cases where blockchain can add value.",
+          "Customized blockchain adoption roadmap."
+        ]
+      },
+      {
+        "name": "Smart Contract Development",
+        "points": [
+          "Design, development, and deployment of secure smart contracts.",
+          "Audit services to ensure reliability and compliance."
+        ]
+      },
+      {
+        "name": "Decentralized Application (dApp) Development",
+        "points": [
+          "End-to-end dApp creation tailored to business needs.",
+          "Expertise in Ethereum, Binance Smart Chain, Polkadot, and more."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "web-app-development",
+    "name": "Website & Web Application Development",
+    "description": "We build responsive and scalable websites using modern technologies.",
+    "details": "Our web development service includes front-end, back-end, and full-stack solutions tailored to your business needs."
+  },
+  {
+    "id": "mobile-app-development",
+    "name": "Mobile Apps Development",
+    "description": "Creating intuitive and feature-rich mobile and web applications.",
+    "details": "Our app development service covers iOS, Android, and cross-platform apps, ensuring user satisfaction."
+  },
+  {
+    "id": "ecom-development",
+    "name": "E-Commerce Development",
+    "description": "Creating intuitive and feature-rich mobile and web applications.",
+    "details": "Our app development service covers iOS, Android, and cross-platform apps, ensuring user satisfaction."
+  },
+  {
+    "id": "server-deployment",
+    "name": "Server Deployment",
+    "description": "Creating intuitive and feature-rich mobile and web applications.",
+    "details": "Our app development service covers iOS, Android, and cross-platform apps, ensuring user satisfaction."
+  }
+]

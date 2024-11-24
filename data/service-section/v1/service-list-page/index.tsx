@@ -96,49 +96,49 @@ export const serviceSectionData: ServiceSectionProps = {
       title: 'BlockChain Consulting',
       description:
         'Unlock the potential of blockchain technology with our consulting services. We guide you understand the opportunities to optimize your business operations.',
-      slug: '/services/single',
+      slug: '/services/blockchain-consulting',
     },
     {
       icon: <Icon1 />,
       title: 'BlockChain Development',
       description:
         'Unlock the potential of blockchain technology with our consulting services. We guide you understand the opportunities to optimize your business operations.',
-      slug: '/services/single',
+      slug: '/services/blockchain-development',
     },
     {
       icon: <Icon2 />,
       title: 'Smart Contract Development',
       description:
         'Leverage the power of blockchain automation through secure, efficient, and self-executing smart contracts. We design and deploy customized smart contracts.',
-      slug: '/services/single',
+      slug: '/services/smart-contract-development',
     },
     {
       icon: <Icon6 />,
       title: 'Website & Web Application Development',
       description:
         'At Encodix, we specialize in developing custom websites and web applications that are tailored to meet your business needs.',
-      slug: '/services/single',
+      slug: '/services/web-app-development',
     },
     {
       icon: <Icon3 />,
       title: 'Mobile Apps Development',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/services/mobile-app-development',
     },
     {
       icon: <Icon4 />,
       title: 'E-Commerce Development',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/services/ecom-development',
     },
     {
       icon: <Icon5 />,
       title: 'Server Deployment',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/services/server-deployment',
     },
   ],
 };
