@@ -93,42 +93,49 @@ export const serviceSectionData: ServiceSectionProps = {
   services: [
     {
       icon: <Icon1 />,
-      title: 'Net Connect Plus',
+      title: 'BlockChain Consulting',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Unlock the potential of blockchain technology with our consulting services. We guide you understand the opportunities to optimize your business operations.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon1 />,
+      title: 'BlockChain Development',
+      description:
+        'Unlock the potential of blockchain technology with our consulting services. We guide you understand the opportunities to optimize your business operations.',
       slug: '/services/single',
     },
     {
       icon: <Icon2 />,
-      title: 'Data Guard Sentinel',
+      title: 'Smart Contract Development',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Leverage the power of blockchain automation through secure, efficient, and self-executing smart contracts. We design and deploy customized smart contracts.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Website & Web Application Development',
+      description:
+        'At Encodix, we specialize in developing custom websites and web applications that are tailored to meet your business needs.',
       slug: '/services/single',
     },
     {
       icon: <Icon3 />,
-      title: 'App Swift DevOps',
+      title: 'Mobile Apps Development',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
       slug: '/services/single',
     },
     {
       icon: <Icon4 />,
-      title: 'Data Guard Sentinels',
+      title: 'E-Commerce Development',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
       slug: '/services/single',
     },
     {
       icon: <Icon5 />,
-      title: 'App Swift DevOps',
-      description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
-    },
-    {
-      icon: <Icon6 />,
-      title: 'Net Connect Plus',
+      title: 'Server Deployment',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
       slug: '/services/single',
