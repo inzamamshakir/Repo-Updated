@@ -9,6 +9,7 @@ import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import { FaCircleCheck, FaPhone } from 'react-icons/fa6';
 import servicesData from '@/data/service-section/services-details.json';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 
 // const services: LinkProps[] = [
 //   {
@@ -268,54 +269,41 @@ export function ServiceDetailsSection() {
                 </div>
               </div>
             </div>
+
             <div>
               <h2 className="text-xl font-bold text-accent-700 dark:text-white">
                 Key Offerings
               </h2>
             </div>
-            {/* <p>
+            <p>
               Aliquam eros justo, posuere loborti viverra lao ullamcorper
               posuere viverra .Aliquam eros justo, posuere lobortis non, viverra
               laoreet augue mattis start fermentum ullamcor viverra laoreet By
               Admin . Creativity . 28th February 2022 . Leave a comment viverra
               laoreet augue mattis start fermentum start fermentum
-            </p> */}
+            </p>
 
-            <div className="mt-2.5 grid grid-cols-[1fr_260px] gap-6">
-              <div className="grid items-baseline gap-6 lg:gap-9">
+            {/* Checking From Here */}
+
+            <div className="my-10 grid items-center gap-8 md:grid-cols-2">
+              <div className="grid gap-4">
                 {service.keyOfferings?.map((offering, index) => (
-                  <div key={index}>
-                    <h3 className="text-md font-bold text-accent-700 dark:text-white">
-                      {offering.name}
-                    </h3>
-                    {/* <p>{offering.description}</p> */}
+                  <div className="grid gap-3" key={index}>
+                    <div className="flex items-center gap-4">
+                      <span className="flex-none text-base/[1] text-primary">
+                        <FaArrowAltCircleRight />
+                      </span>
+                      <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                        {offering.name}
+                      </h3>
+                    </div>
                     {offering.points?.map((point, index) => (
                       <ul key={index} className="list-disc pl-8">
                         <li>{point}</li>
                       </ul>
-                    ))}
+                      ))}
                   </div>
                 ))}
-                {/* <div>
-                  <h3 className="text-md font-bold text-accent-700 dark:text-white">
-                    Design make for you.
-                  </h3>
-                  <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    the.ished fact that a reader will be distrol acted bioiiy
-                    bioiiy desig the.ished fact that a reader.
-                  </p>
-                </div> */}
-                {/* <div>
-                  <h3 className="text-md font-bold text-accent-700 dark:text-white">
-                    Finished the process
-                  </h3>
-                  <p>
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    the.ished fact that a reader will be distrol acted bioiiy
-                    bioiiy desig the.ished fact that a reader.
-                  </p>
-                </div> */}
               </div>
               <Image
                 src={`${service.serviceImageLast}`}
@@ -325,6 +313,8 @@ export function ServiceDetailsSection() {
                 className="rounded-5"
               />
             </div>
+
+            {/* Checking Till Here */}
           </div>
         </div>
       </Container>
