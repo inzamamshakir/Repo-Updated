@@ -2,7 +2,8 @@
 
 import React, { useState, FunctionComponent } from 'react';
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+import { useVisibility } from './usevisibility';
+import mergeRefs from './usevisibility/mergeRefs';
 
 interface CounterProps {
   end: number;
@@ -17,7 +18,12 @@ export const Counter: FunctionComponent<CounterProps> = ({
   delay,
   duration,
 }) => {
+  const [ref, isVisible] = useVisibility({ threshold: 0.1 });
   const [viewPortEntered, setViewPortEntered] = useState(false);
+
+  if (isVisible && !viewPortEntered) {
+    setViewPortEntered(true);
+  }
 
   return (
     <CountUp
@@ -27,21 +33,7 @@ export const Counter: FunctionComponent<CounterProps> = ({
       duration={duration}
       start={viewPortEntered ? undefined : 0}
     >
-      {({ countUpRef }) => {
-        return (
-          <VisibilitySensor
-            active={!viewPortEntered}
-            onChange={(isVisible: boolean) => {
-              if (isVisible) {
-                setViewPortEntered(true);
-              }
-            }}
-            delayedCall
-          >
-            <span ref={countUpRef} />
-          </VisibilitySensor>
-        );
-      }}
+      {({ countUpRef }) => <span ref={mergeRefs(ref, countUpRef)} />}
     </CountUp>
   );
 };

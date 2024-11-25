@@ -1,7 +1,7 @@
 import { HeroSectionProps } from '@/src/sections/hero/v2';
 
 export const heroSectionData: HeroSectionProps = {
-  title: 'Navigating Tech Horizons Together',
+  title: 'Empowering Businesses Through Innovation and Technology',
   customers: [
     {
       src: '/assets/images/hero/avatar-1.png',
@@ -17,7 +17,7 @@ export const heroSectionData: HeroSectionProps = {
     },
   ],
   customerCounterInfo: {
-    count: 3000,
+    count: 116,
     about: 'Satisfied Customer',
     suffix: '+',
   },
@@ -36,8 +36,8 @@ export const heroSectionData: HeroSectionProps = {
     alt: 'image 6',
   },
   statisticsCounterInfo: {
-    count: 4,
+    count: 4000,
     about: 'Daily Activate Customer ',
-    suffix: 'K+',
+    suffix: '+',
   },
 };
