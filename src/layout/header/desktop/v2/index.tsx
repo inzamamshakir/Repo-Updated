@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef } from 'react';
 import { LinkProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
 import { BrandLogo } from '../../../brand-logo';
@@ -10,7 +11,7 @@ import {
   FaArrowRight,
   // FaCartShopping,
   FaEnvelope,
-  // FaMagnifyingGlass,
+  FaMagnifyingGlass,
   FaPaperPlane,
   FaPhone,
 } from 'react-icons/fa6';
@@ -43,13 +44,15 @@ export interface HeaderProps {
 const addressIconParentClasses = cn('text-base/[1] text-primary flex-none');
 const addressItemClasses = cn('flex items-center gap-2.5');
 
-// const actionIconClasses = cn(
-//   'text-[1.25rem]/[1] dark:text-white cursor-pointer text-accent-900 transition-colors duration-300 hover:text-primary dark:hover:text-primary'
-// );
+const actionIconClasses = cn(
+  'text-[1.25rem]/[1] dark:text-white cursor-pointer text-accent-900 transition-colors duration-300 hover:text-primary dark:hover:text-primary'
+);
 
 export function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isSticky = useStickyHeader(700);
+
+  const nodeRef = useRef(null);
 
   const { contactInfo, ctaBtn, menuItems } = headerData;
 
@@ -117,7 +120,7 @@ export function Header() {
                     aria-label="header actions"
                     className="flex items-center gap-30px"
                   >
-                    {/* <li>
+                    <li>
                       <button
                         aria-label="Search toggle handler"
                         className={actionIconClasses}
@@ -127,7 +130,7 @@ export function Header() {
                       >
                         <FaMagnifyingGlass />
                       </button>
-                    </li> */}
+                    </li>
                     {/* <li>
                       <span className={actionIconClasses}>
                         <FaCartShopping />
@@ -152,6 +155,7 @@ export function Header() {
           enterActive: styles['modal-enter-active'],
           exitActive: styles['modal-exit-active'],
         }}
+        nodeRef={nodeRef}
         unmountOnExit
       >
         <SearchModal setIsModalOpen={setIsModalOpen} />

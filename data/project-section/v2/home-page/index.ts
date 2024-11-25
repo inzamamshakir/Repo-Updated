@@ -16,24 +16,24 @@ export const projectSectionData: ProjectSectionProps = {
       value: '*',
     },
     {
-      label: 'AI Insights Pro',
-      value: '.AIInsightsPro',
+      label: 'Blockchain Development',
+      value: '.BlockchainDevelopment',
     },
     {
-      label: 'Tech Armor Security',
-      value: '.TechArmorSecurity',
+      label: 'Web App Development',
+      value: '.WebAppDevelopment',
     },
     {
-      label: 'Blockchain Forge',
-      value: '.BlockchainForge',
+      label: 'Mobile App Development',
+      value: '.MobileAppDevelopment',
     },
     {
-      label: 'DigitalIQ Consulting',
-      value: '.DigitalIQConsulting',
+      label: 'E-Commerce Development',
+      value: '.EComDevelopment',
     },
     {
-      label: 'RapidApp Innovate',
-      value: '.RapidAppInnovate',
+      label: 'Server Deployment',
+      value: '.ServerDevelopment',
     },
   ],
   projects: [
@@ -45,7 +45,7 @@ export const projectSectionData: ProjectSectionProps = {
       },
       title: 'Project Quantum Leap',
       description: 'InfinitiTech',
-      tags: ['AIInsightsPro', 'BlockchainForge'],
+      tags: ['BlockchainDevelopment', 'WebAppDevelopment'],
     },
     {
       slug: '/project/single',
@@ -55,7 +55,7 @@ export const projectSectionData: ProjectSectionProps = {
       },
       title: 'Project Cyber Fusion',
       description: 'ByteCrafters',
-      tags: ['DigitalIQConsulting'],
+      tags: ['ServerDevelopment'],
     },
     {
       slug: '/project/single',
@@ -65,7 +65,7 @@ export const projectSectionData: ProjectSectionProps = {
       },
       title: 'Project Cloud Horizon',
       description: 'DataWave Tech',
-      tags: ['AIInsightsPro', 'BlockchainForge'],
+      tags: ['WebAppDevelopment', 'EComDevelopment'],
     },
     {
       slug: '/project/single',
@@ -75,7 +75,7 @@ export const projectSectionData: ProjectSectionProps = {
       },
       title: 'Project Data Harbor',
       description: 'QuantumSolve',
-      tags: ['RapidAppInnovate', 'TechArmorSecurity'],
+      tags: ['ServerDevelopment'],
     },
   ],
 };
