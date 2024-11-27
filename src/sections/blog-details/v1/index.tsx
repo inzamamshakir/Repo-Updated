@@ -1,9 +1,11 @@
+'use client';
 import {
   ImageProps,
   LinkProps,
   SocialItemProps,
   blurDataUrl,
 } from '@/src/common-types';
+import { useParams } from 'next/navigation';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
@@ -24,6 +26,8 @@ import {
   FaTwitter,
   FaInstagram,
 } from 'react-icons/fa6';
+import blogsData from '@/data/blog-section/blogs/index.json';
+import { blogs } from '@/src/sections/blog-list';
 
 interface AuthorProps {
   image: Omit<ImageProps, 'width' | 'height'>;
@@ -239,6 +243,16 @@ const inputBoxClasses = cn(
 );
 
 export function BlogDetilsSection() {
+  const params = useParams();
+  const id = params?.id;
+
+  // Find the relevant service based on the `id` from the URL
+  const blogSingle = blogs.find((blog) => blog.id === id);
+
+  if (!blogSingle) {
+    return <p>Service not found.</p>;
+  }
+
   return (
     <section className="section-padding-primary">
       <Container>
