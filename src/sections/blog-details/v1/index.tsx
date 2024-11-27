@@ -26,7 +26,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from 'react-icons/fa6';
-import blogsData from '@/data/blog-section/blogs/index.json';
+// import blogsData from '@/data/blog-section/blogs/index.json';
 import { blogs } from '@/src/sections/blog-list';
 
 interface AuthorProps {
