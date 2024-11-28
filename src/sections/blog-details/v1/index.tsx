@@ -152,7 +152,7 @@ export function BlogDetilsSection() {
                   <span>
                     By{' '}
                     <CustomLink href="#" className={linkClasses}>
-                      admin
+                      {blogSingle.authorName}
                     </CustomLink>
                   </span>
                 </li>
@@ -161,7 +161,8 @@ export function BlogDetilsSection() {
                     <FaRegFolderOpen />
                   </span>
                   <CustomLink href="#" className={linkClasses}>
-                    Category
+                    {blogSingle.categories.charAt(0).toUpperCase() +
+                      String(blogSingle.categories).slice(1)}
                   </CustomLink>
                 </li>
                 <li className="flex items-center gap-2.5">
@@ -170,7 +171,7 @@ export function BlogDetilsSection() {
                   </span>
                   <span>
                     <CustomLink href="#" className={linkClasses}>
-                      Comments (05)
+                      {`Comments(${blogSingle.commentCount})`}
                     </CustomLink>
                   </span>
                 </li>
@@ -247,7 +248,7 @@ export function BlogDetilsSection() {
                 laoreet matti ullamcorper posuere viverra .Aliquam eros justo,
                 posuere lobortis non.
               </p>
-              <div className="my-10 flex flex-wrap items-center justify-between gap-x-5 gap-y-2.5 rounded-5 bg-accent-100 px-30px py-6 dark:bg-accent-700">
+              {/* <div className="my-10 flex flex-wrap items-center justify-between gap-x-5 gap-y-2.5 rounded-5 bg-accent-100 px-30px py-6 dark:bg-accent-700">
                 <div className="flex items-center gap-2.5">
                   <span className="text-primary">
                     <FaTags />
@@ -295,9 +296,9 @@ export function BlogDetilsSection() {
                     </ul>
                   </nav>
                 )}
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-start gap-x-6 gap-y-5 md:flex-row">
+              {/* <div className="flex flex-col items-start gap-x-6 gap-y-5 md:flex-row">
                 <Image
                   src="/assets/images/blog/author-2.png"
                   alt="Stanio lainto"
@@ -327,9 +328,9 @@ export function BlogDetilsSection() {
                     <FaReply />
                   </CustomLink>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="mt-12">
+              {/* <div className="mt-12">
                 <h3 className="h2 text-accent-700 dark:text-white">
                   Leave a comment
                 </h3>
@@ -373,7 +374,7 @@ export function BlogDetilsSection() {
                     </Button>
                   </div>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="grid gap-30px self-baseline max-md:mx-auto max-md:max-w-[410px] lg:gap-10">
