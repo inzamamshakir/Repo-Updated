@@ -1,3 +1,5 @@
+'use client';
+import { useParams } from 'next/navigation';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
@@ -12,11 +14,11 @@ import {
   FaRegUser,
 } from 'react-icons/fa6';
 import { Author, authorData } from '@/data/blog-section/blogs/author';
-import { blogs } from '@/data/blog-section/blogs';
 import {
   CategoryList,
   categoryListData,
 } from '@/data/blog-section/blogs/categories';
+import { blogs } from '@/data/blog-section/blogs';
 
 function SearchBox() {
   return (
@@ -84,15 +86,28 @@ const linkClasses = cn(
   'transition-colors duration-400 hover:text-primary ease-in-out'
 );
 
-export function BlogListSection() {
+export function CategoryListSection() {
+  const params = useParams(); // Get the dynamic route parameter
+  const category = params?.categories;
+
+  if (typeof category !== 'string') {
+    return <p>Category Not Found. Please try again.</p>;
+  }
+
+  const filteredBlogs = blogs.filter((blog) =>
+    blog.categories.includes(category)
+  );
+
+  console.log(filteredBlogs, 'Filtered Blogs');
+
   return (
     <section className="section-padding-primary">
       <Container>
         <div className="grid gap-30px lg:grid-cols-[1fr_410px]">
           <div>
-            {blogs && blogs.length > 0 && (
+            {filteredBlogs && filteredBlogs.length > 0 && (
               <div className="grid gap-10 lg:gap-20">
-                {blogs.map(
+                {filteredBlogs.map(
                   (
                     {
                       slug,
@@ -147,10 +162,7 @@ export function BlogListSection() {
                           <span className="flex-none text-sm text-primary">
                             <FaRegFolderOpen />
                           </span>
-                          <CustomLink
-                            href={`blog/category/${categories}`}
-                            className={linkClasses}
-                          >
+                          <CustomLink href="" className={linkClasses}>
                             {categories}
                           </CustomLink>
                         </li>

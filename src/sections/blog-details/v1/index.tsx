@@ -1,10 +1,5 @@
 'use client';
-import {
-  ImageProps,
-  LinkProps,
-  SocialItemProps,
-  blurDataUrl,
-} from '@/src/common-types';
+import { SocialItemProps, blurDataUrl } from '@/src/common-types';
 import { useParams } from 'next/navigation';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
@@ -27,38 +22,12 @@ import {
   FaInstagram,
 } from 'react-icons/fa6';
 // import blogsData from '@/data/blog-section/blogs/index.json';
-import { blogs } from '@/src/sections/blog-list';
-
-interface AuthorProps {
-  image: Omit<ImageProps, 'width' | 'height'>;
-  name: string;
-  about: string;
-  socialLinks: SocialItemProps[];
-}
-
-const authorData: AuthorProps = {
-  image: {
-    src: '/assets/images/blog/author-1.png',
-    alt: 'author image 1',
-  },
-  name: 'Naturials paul',
-  about:
-    'Aliquam eros justo, posuere lobort viverra lao ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis non',
-  socialLinks: [
-    {
-      icon: <FaFacebookF />,
-      href: 'https://www.facebook.com/',
-    },
-    {
-      icon: <FaTwitter />,
-      href: 'https://twitter.com/',
-    },
-    {
-      icon: <FaInstagram />,
-      href: 'https://www.instagram.com/',
-    },
-  ],
-};
+import { blogs } from '@/data/blog-section/blogs';
+import { Author, authorData } from '@/data/blog-section/blogs/author';
+import {
+  CategoryList,
+  categoryListData,
+} from '@/data/blog-section/blogs/categories';
 
 const socialLinks: SocialItemProps[] = [
   {
@@ -78,43 +47,6 @@ const socialLinks: SocialItemProps[] = [
     href: 'https://www.linkedin.com/',
   },
 ];
-
-function Author({ image, name, about, socialLinks }: AuthorProps) {
-  return (
-    <div className="space-y-5 rounded-5 bg-accent-100 p-8 text-center dark:bg-accent-700 lg:p-10">
-      <Image
-        src={image.src}
-        alt={image.alt || name}
-        width={127}
-        height={127}
-        placeholder="blur"
-        blurDataURL={blurDataUrl}
-        className="mx-auto rounded-full object-cover"
-      />
-      <h3 className="font-secondary text-lg font-bold leading-[1.25] text-accent-900 dark:text-white md:text-xl">
-        {name}
-      </h3>
-      <p>{about}</p>
-      {socialLinks && socialLinks.length > 0 && (
-        <nav aria-label="social links">
-          <ul className="inline-flex items-center divide-x  divide-accent-800/50 text-accent-900 dark:divide-accent-100/50  dark:text-white">
-            {socialLinks.map((socialLink, index) => (
-              <li key={index}>
-                <CustomLink
-                  href={socialLink.href}
-                  openNewTab
-                  className="block px-4 text-base/[1.75] transition-transform duration-350 hover:-translate-y-1 hover:text-primary"
-                >
-                  <span>{socialLink.icon}</span>
-                </CustomLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
-    </div>
-  );
-}
 
 function SearchBox() {
   return (
@@ -137,67 +69,6 @@ function SearchBox() {
           </span>
         </Button>
       </div>
-    </div>
-  );
-}
-
-interface CategoryListProps {
-  links: LinkProps[];
-}
-
-const categoryListData: CategoryListProps = {
-  links: [
-    {
-      label: 'Genarel consturction',
-      href: '',
-    },
-    {
-      label: 'Business Advice',
-      href: '',
-    },
-    {
-      label: 'Stock market',
-      href: '',
-    },
-    {
-      label: 'Regular start',
-      href: '',
-    },
-    {
-      label: 'Regular start',
-      href: '',
-    },
-  ],
-};
-
-function CategoryList({ links }: CategoryListProps) {
-  return (
-    <div className="space-y-5 rounded-5 bg-accent-100 p-8 dark:bg-accent-700 lg:p-10">
-      <h3 className="font-secondary text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
-        Category
-      </h3>
-      {links && links.length > 0 && (
-        <nav aria-label="footer links navigation">
-          <ul className="grid gap-2.5 divide-y divide-accent-700/20 dark:divide-accent-200/20">
-            {links.map((link, index) => (
-              <li
-                key={index}
-                className="flex items-center gap-2.5 pt-2.5 first:pt-0"
-              >
-                <span className="grid h-3 w-3 place-items-center border border-primary">
-                  <span className="block h-0.5 w-0.5 bg-primary"></span>
-                </span>
-                <CustomLink
-                  href={link.href}
-                  className="transition-colors duration-300 hover:text-primary"
-                >
-                  {link.label}
-                </CustomLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
     </div>
   );
 }

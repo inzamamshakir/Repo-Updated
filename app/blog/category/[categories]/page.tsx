@@ -1,12 +1,12 @@
 import { Footer } from '@/src/layout/footer/v2';
 import { MainHeader } from '@/src/layout/header';
-import { TermsConditionsSection } from '@/src/sections/terms-conditions/v1';
+import { CategoryListSection } from '@/src/sections/category-list';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { Metadata } from 'next';
 import bannerImage from 'public/assets/images/hero/hero-3.jpg';
 
 export const metadata: Metadata = {
-  title: 'Encodix | Terms & Conditions',
+  title: 'Encodix | Blog',
   description: 'Encodix - Discover the Best with Encodix',
 };
 
@@ -15,19 +15,19 @@ export default function Page() {
     <>
       <MainHeader version="2" />
       <HeroSection
-        title="Terms & Conditions"
+        title="Category Classic"
         breadcrumbItems={[
           {
             label: 'Home',
             href: '/',
           },
           {
-            label: 'Terms & Conditions',
+            label: 'Category Classic',
           },
         ]}
         heroImageUrl={bannerImage.src}
       />
-      <TermsConditionsSection />
+      <CategoryListSection />
       <Footer />
     </>
   );

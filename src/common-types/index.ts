@@ -38,6 +38,33 @@ export interface SectionProps {
   className?: ClassValue;
 }
 
+//   Blogs Types
+
+export interface BlogProps {
+  image: Omit<ImageProps, 'width' | 'height'>;
+  authorName: string;
+  categories: string;
+  commentCount: string;
+  title: string;
+  description: string;
+  slug: string;
+  id: string;
+}
+
+export interface Social {
+  icon: React.ReactNode;
+  href: string;
+}
+export interface AuthorProps {
+  image: Omit<ImageProps, 'width' | 'height'>;
+  name: string;
+  about: string;
+  socialLinks: Social[];
+}
+
+
+
+
 /**
  * A union type for server action response.
  *
