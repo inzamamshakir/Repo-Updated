@@ -3,11 +3,12 @@ import Image from 'next/image';
 
 import logoLight from 'public/assets/images/brand/logo-light.png';
 import logoDark from 'public/assets/images/brand/logo-dark.png';
+import HeaderSvg from 'public/assets/HeaderSvg';
 
 export function BrandLogo() {
   return (
     <CustomLink href="/">
-      <Image
+      {/* <Image
         className="logo-light dark:hidden"
         src={logoLight.src}
         width={logoLight.width}
@@ -28,7 +29,8 @@ export function BrandLogo() {
         alt={`${process.env.NEXT_PUBLIC_SITE_NAME} brand logo`}
         sizes="100vw"
         priority
-      />
+      /> */}
+      <HeaderSvg />
     </CustomLink>
   );
 }
