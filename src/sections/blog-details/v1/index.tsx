@@ -5,7 +5,7 @@ import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { TextInput } from '@/src/components/inputs/text-input';
-import { TextAreaInput } from '@/src/components/inputs/textarea-input';
+// import { TextAreaInput } from '@/src/components/inputs/textarea-input';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import {
@@ -15,8 +15,8 @@ import {
   FaRegComments,
   FaRegFolderOpen,
   FaRegUser,
-  FaReply,
-  FaTags,
+  // FaReply,
+  // FaTags,
   FaFacebookF,
   FaTwitter,
   FaInstagram,
@@ -29,24 +29,24 @@ import {
   categoryListData,
 } from '@/data/blog-section/blogs/categories';
 
-const socialLinks: SocialItemProps[] = [
-  {
-    icon: <FaFacebookF />,
-    href: 'https://www.facebook.com/',
-  },
-  {
-    icon: <FaTwitter />,
-    href: 'https://twitter.com/',
-  },
-  {
-    icon: <FaInstagram />,
-    href: 'https://www.instagram.com/',
-  },
-  {
-    icon: <FaLinkedinIn />,
-    href: 'https://www.linkedin.com/',
-  },
-];
+// const socialLinks: SocialItemProps[] = [
+//   {
+//     icon: <FaFacebookF />,
+//     href: 'https://www.facebook.com/',
+//   },
+//   {
+//     icon: <FaTwitter />,
+//     href: 'https://twitter.com/',
+//   },
+//   {
+//     icon: <FaInstagram />,
+//     href: 'https://www.instagram.com/',
+//   },
+//   {
+//     icon: <FaLinkedinIn />,
+//     href: 'https://www.linkedin.com/',
+//   },
+// ];
 
 function SearchBox() {
   return (
@@ -109,9 +109,9 @@ const linkClasses = cn(
   'transition-colors duration-400 hover:text-primary ease-in-out inline'
 );
 
-const inputBoxClasses = cn(
-  'focus:border-primary dark:focus:border-primary focus:border-opacity-100 dark:focus:border-opacity-100'
-);
+// const inputBoxClasses = cn(
+//   'focus:border-primary dark:focus:border-primary focus:border-opacity-100 dark:focus:border-opacity-100'
+// );
 
 export function BlogDetilsSection() {
   const params = useParams();
