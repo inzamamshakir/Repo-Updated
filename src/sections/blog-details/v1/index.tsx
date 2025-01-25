@@ -1,5 +1,8 @@
 'use client';
-import { SocialItemProps, blurDataUrl } from '@/src/common-types';
+import {
+  // SocialItemProps,
+  blurDataUrl,
+} from '@/src/common-types';
 import { useParams } from 'next/navigation';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
@@ -9,7 +12,7 @@ import { TextInput } from '@/src/components/inputs/text-input';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import {
-  FaLinkedinIn,
+  // FaLinkedinIn,
   FaMagnifyingGlass,
   FaQuoteRight,
   FaRegComments,
@@ -17,9 +20,9 @@ import {
   FaRegUser,
   // FaReply,
   // FaTags,
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
+  // FaFacebookF,
+  // FaTwitter,
+  // FaInstagram,
 } from 'react-icons/fa6';
 // import blogsData from '@/data/blog-section/blogs/index.json';
 import { blogs } from '@/data/blog-section/blogs';
